@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database','ion_auth','template','cart');
+$autoload['libraries'] = array('session','database','DefaultTheme','uuid');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','form','date','html','string','text');
+$autoload['helper'] = array('url','form','html','cookie','string','file','uniccode','api','hideerror');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,11 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array();
+$autoload['model'] = array(
+    'Mod_antrian',
+    'Mod_pasien',
+    'Mod_resepsionis',
+    'Mod_obat',
+    'Mod_kasir',
+    'Mod_dokter'
+);
